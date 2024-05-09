@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Poppins Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Import Icons Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- Component -->
+    <div class="container">
+        <!-- Title -->
+        <h3>🔐 Password generator</h3>
+
+        <!-- Password display -->
+        <button class="strength" id="strength" style="background-color: #fff;"></button>
+        <div>
+            <input type="text" id="password" readonly>
+            <!-- Refresh button -->
+            <button class="semi-button" id="refresh">
+                <span class="material-symbols-outlined">
+                    sync
+                </span>
+            </button>
+        </div>
+
+        <!-- Copy and Show button -->
+        <div>
+            <button class="blue" id="copy">
+                Copy
+            </button>
+            <button class="white" id="show">
+                Show
+            </button>
+        </div>
+
+        <!-- Parameter(s) -->
+        <div>
+            <!-- Length selector -->
+            <h4>
+                Password length: <span class="passwordLength">15</span>
+            </h4>
+            <div>
+                <button id="decrease" class="square white">
+                    <span class="material-symbols-outlined">
+                        remove
+                    </span>
+                </button>
+                <input id="range" type="range" value="15" min="1" max="50">
+                <button id="increase" class="square white">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </button>
+            </div>
+
+            <!-- Chars selector -->
+            <h4>
+                Characters used:
+            </h4>
+            <input type="checkbox" id="uppercase" checked> 
+                <label for="uppercase">ABC</label>
+            <input type="checkbox" id="lowercase" checked> 
+                <label for="lowercase">abc</label>
+            <input type="checkbox" id="numbers" checked> 
+                <label for="numbers">123</label>
+            <input type="checkbox" id="symbols"> 
+                <label for="symbols">#$&</label>
+        </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>

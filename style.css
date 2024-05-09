@@ -1,0 +1,197 @@
+* {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+.container {
+    margin: auto;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+
+    height: auto;
+    width: fit-content;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #141414;
+    border:1px solid #EB951C;
+    border-radius: 15px;
+}
+
+input#password {
+    margin: 0.25rem -4px 0.5em 0.5em;
+    padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+
+    color: #fff;
+    background-color: #000000;
+    border: 1px solid #323333;
+    border-radius: 15px 0 0 15px;
+
+    transform: translateY(-5px);
+}
+
+button {
+    padding: 0.6rem;
+
+    width: 80px;
+
+    text-align: center;
+
+    color: #b1b1b1;
+    background-color: #323333;
+    border: 0;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #434444;
+    color: #8f8d8d;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button.blue {
+    margin: 10px;
+    background-color: #467cf36b;
+    color: #92a1f5;
+}
+
+button.blue:hover {
+    background-color: #618ff37c;
+    color: #aab4ec;
+}
+
+button.white {
+    margin: 10px;
+    background-color: #ffffffb1;
+    color: #505050;
+}
+
+button.white:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+button.semi-button#refresh {
+    margin-left:0;
+
+    text-align: center;
+
+    height: 37px;
+    width: 50px;
+
+    border-radius: 0 15px 15px 0;
+}
+
+button.unavailable {
+  margin: 10px;
+  background-color: #1c1d1d;
+  color: #323333;
+}
+
+button.unavailable:active {
+  transform: none;
+}
+
+.strength {
+    margin: 10px;
+    padding: 8px;
+
+    height: fit-content;
+    width: auto;
+    min-width: 100px;
+
+    text-align: center;
+
+    color: #000;
+    font-size: small;
+    font-weight: bold;
+    border: 1px solid #323333;
+    border-radius: 0.5rem;
+    border-color: #505050;
+}
+
+.strength:hover {
+  color: #000;
+}
+
+.strength:active {
+  transform: none;
+}
+
+button.square {
+  width: 37px;
+  height: 37px;
+  font-weight: bold;
+}
+
+span.material-symbols-outlined {
+  font-size: large;
+}
+
+/*custom slider from https://range-input-css.netlify.app/ */
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  /* Removes default focus */
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+  /* slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -4px; /* Centers thumb on the track */
+    background-color: rgb(214, 169, 85);
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 0;
+    outline-offset: 0.125rem;
+  }
+  
+  /*********** Firefox styles ***********/
+  /* slider track */
+  input[type="range"]::-moz-range-track {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-moz-range-thumb {
+    background-color: rgb(214, 169, 85);
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb{
+    outline: 0;
+    outline-offset: 0.125rem;
+  }
+
